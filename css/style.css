@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-image: linear-gradient(to right, #19c9d9,#239ac1);
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+}
+#container{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header{
+    margin-top: 30px;
+}
+#form{
+    position: relative;
+    margin-top: 30px;
+}
+#form input{
+    border: 1px solid #131733;
+    outline: none;
+    color: #131733;
+    background-color: #fff;
+    padding: 15px;
+    font-size: 18px;
+    width: 100%;
+}
+#form input::placeholder{
+    color: #131733;
+}
+.btn{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border: 1px solid #131733;
+    cursor: pointer;
+    transition: .5s;
+    width: 60px;
+    height: 100%;
+    font-size: 25px;
+}
+.btn:hover{
+    background-color: #131733;
+    color: #fff;
+}
+.list-container h2{
+    margin: 30px 0px;
+}
+.list{
+    list-style: none;
+     padding-left: 0px;
+}
+.list li{
+    text-align: left;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    border-bottom: 3px solid #131733;
+    background-color: #fff;
+    color: #131733;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    transition: .5s;
+    font-weight: bold;
+}
+.list li span{
+    font-size: 18px;
+}
+.list .fas{
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 45px;
+    padding:15px;
+    transition: .5s;
+    cursor: pointer;
+}
+.done{
+    right: 40px;
+}
+.done:hover{
+    color: #fff;
+    background-color: #09e01b;
+}
+.remove{
+    right: 0px;
+    
+}
+.remove:hover{
+    color: #fff;
+    background-color: #eb0927;
+}
+.hide{
+    display: none;
+}
+.list li.feito{
+    background-color: #131733;
+    color: #fff;
+    text-decoration: line-through;
+}
